@@ -1,7 +1,7 @@
 #include <algorithm>
 #include "main.hxx"
 
-namespace aoc::day3 {
+namespace aoc::day4 {
     input_t read_input(std::istream &is) {
         input_t strs;
         std::ranges::copy(std::views::istream<std::string>(is), std::back_inserter(strs));
@@ -123,7 +123,7 @@ namespace aoc::day3 {
 }
 
 int main() {
-    using namespace aoc::day3;
+    using namespace aoc::day4;
 
     freopen("./input.txt", "r", stdin);
 

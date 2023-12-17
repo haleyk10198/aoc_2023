@@ -3,16 +3,11 @@
 #include "main.hxx"
 #include <range/v3/to_container.hpp>
 #include <sstream>
+#include "commons.hxx"
 
 using std::operator ""sv;
 
-namespace aoc::day3 {
-
-    struct CompleteLine {    // Line Proxy for the input Iterator
-        friend std::istream& operator>>(std::istream& is, CompleteLine& cl) { std::getline(is, cl.completeLine); return is; }
-        operator std::string() const { return completeLine; }  // cast operator
-        std::string completeLine{};
-    };
+namespace aoc::day4 {
 
     std::size_t card::count() const {
         return std::ranges::count_if(content_, [this](int value) {
@@ -56,7 +51,7 @@ namespace aoc::day3 {
 }
 
 int main() {
-    using namespace aoc::day3;
+    using namespace aoc::day4;
 
     freopen("./input.txt", "r", stdin);
 

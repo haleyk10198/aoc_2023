@@ -3,7 +3,7 @@
 #include <ranges>
 #include <range/v3/to_container.hpp>
 
-namespace aoc::day3 {
+namespace aoc::day4 {
     using line_t = std::string;
     using input_t = std::vector<line_t>;
     using part_t = int;

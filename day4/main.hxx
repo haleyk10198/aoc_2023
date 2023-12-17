@@ -1,7 +1,7 @@
 #include <ranges>
 #include <list>
 
-namespace aoc::day3 {
+namespace aoc::day4 {
     struct card {
         std::list<int> winnings_;
         std::list<int> content_;
